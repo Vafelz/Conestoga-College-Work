@@ -172,13 +172,13 @@ def question_18():
 def question_19():
     """Return the variable `value` as an integer."""
     value = 1 / 3
-    return
+    return int(value)
 
 
 def question_20():
     """Return the variable `value` as a float."""
     value = 2
-    return
+    return float(value)
 
 
 def question_21():
@@ -210,7 +210,7 @@ def question_24():
     as all uppercase.
     """
     text = 'The quick brown fox jumps over the lazy dog'
-    return
+    return text.upper()
 
 
 def question_25():
@@ -219,19 +219,21 @@ def question_25():
     title case (i.e. every word starts with a capital letter).
     """
     text = 'The quick brown fox jumps over the lazy dog'
-    return
+    return text.title()
 
 
 def question_26():
     """
     Return a string containing the backslash character.
     """
-    return
+    back = "This is a backslash= \\"
+    return back
 
 
 def question_27():
     """Return a string containing both single and double quotes."""
-    return
+    r = """A 'single' and a "double" quote?!"""
+    return r
 
 
 def question_28():
@@ -240,7 +242,8 @@ def question_28():
     Canadian provinces. Use their code as the key, and the
     full name as the value. Example "AB" - "Alberta"
     """
-    return
+    my_dict = {'BC': 'British Columbia', 'ON': 'Ontario', 'QC': 'Quebec'}
+    return my_dict
 
 
 def question_29():
@@ -249,7 +252,7 @@ def question_29():
     using the key as the index.
     """
     my_dict = {'a': 3, 'b': 2, 'c': 7}
-    return
+    return my_dict['c']
 
 
 def question_30():
@@ -258,7 +261,8 @@ def question_30():
     key/value pair: b, 10.
     """
     my_dict = {'a': 1}
-    return
+    my_dict['b'] = 10
+    return my_dict
 
 
 def question_31():
@@ -266,7 +270,8 @@ def question_31():
     Return the unique values from the following list.
     """
     my_list = [1, 2, 2, 1, 3, 3, 2]
-    return
+    listSet = set(my_list)
+    return listSet
 
 
 if __name__ == '__main__':
