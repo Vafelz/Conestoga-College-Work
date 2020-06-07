@@ -5,19 +5,20 @@ June 2-8
 Variables and Names
 """
 
-# WHAT YOU SHOULD DO ON YOUR OWN EXERCISE
-cars = 100
-space_in_a_car = 4.0
-drivers = 30
-passengers = 90
-cars_not_driven = cars - drivers
-cars_driven = drivers
-carpool_capacity = cars_driven * space_in_a_car
-average_passengers_per_car = passengers / cars_driven
+variables = "store and recall values, composed of 'name' = 'value'"
+# EXAMPLE F1.0
+age = 3
 
-print("There are", cars, "cars available.")
-print("There are only", drivers, "drivers available.")
-print("There will be", cars_not_driven, "empty cars today.")
-print("We can transport", carpool_capacity, "people today.")
-print("We have", passengers, "to carpool today.")
-print("We need to put about", average_passengers_per_car, "in each car.")
+"""
+DATA TYPES
+
+Integers (int)
+DEFINITION: An integer is a whole number and is treated as such when entered.
+
+Floats (float)
+DEFINITION: numeric values with decimals.
+Floats store real numbers, both rational and irrational numbers, as well as infinity.
+
+Booleans (bool)
+DEFINITION: A subtype of integers, only values are 0 (false) or 1 (true).
+"""
