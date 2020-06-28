@@ -1,7 +1,7 @@
 """
-WEEK 5
+WEEK 7
 
-June 16-22
+June 23-29
 
 MODULE OBJECTIVES
 - Identify the different string formatting and interpolation methods
@@ -11,103 +11,57 @@ MODULE OBJECTIVES
 
 |----------------------------------------------------------------------|
 
-STRING FORMATTING IN PYTHON
+WORKING with DATES
 
-    Concatenation:
-        a = 'Hello'
-        b = 'World'
-        print(a + ' ' + b + '!')
-        => Hello World!
+Import syntax:
+    # Imports a whole package or module
+    import <module>
 
-    Old printf-style formatting using % symbol:
-        fname = 'George'
-        lname = 'Costanza'
-        print('Hello, %s %s.' % fname, lname)
-        => Hello, George Costanza.
+    # Import a specific part of a package or module
+    from <module> import <module/object>
 
-    "New" style .format():
-        fname = 'George'
-        lname = 'Costanza'
-        print('Hello, {} {}'.format(fname, lname))
-        => Hello, George Costanza
-        print('Hello, {f} {l}'.format(l=lname, f=fname))
-        => Hello, George Costanza
+    # Import an object that is deeper in the package structure
+    from <module>.<module> import <object>
 
-    Literal string interpolation (f-string):
-        fname = 'George'
-        lname = 'Costanza'
-        print(f'Hello, {fname} {lname}')
-        => Hello, George Costanza
+Date, Time and Datetime types:
+    dates:
+        The 'date' object accepts values for a year, month and day.
+        e.g.
+            from datetime import date
+            date(2008, 12, 31)
+            => datetime.date(2018, 12, 31)
 
-        print(f'2 x 2 = {2 * 2}')
-        => 2 x 2 = 4
+    time:
+        The 'time' object accepts values for the hour, minute, second, microsecond, and timezone.
+        e.g.
+            from datetime import time
+            time()
+            => datetime.time(0, 0)
+            time(22, 14, 30, 9999)
+            => datetime.time(22, 14, 30, 9999)
 
-NUMBER FORMATTING IN PYTHON
+    datetime:
+        The 'datetime' object is a combination of both 'date' and 'time'.
+        With 'dates', the 'year', 'day' and 'month' values are required, whereas 'time' is optional.
+        e.g.
+            from datetime import datetime
+            datetime(1900, 1, 1, 13, 30)
 
-    Decimal precision:
-        x = 1234
-        print(f'{x:.2f}')
-        => 1234.00
+    Operations with dates:
+            import datetime
+            datetime.datetime.today() - datetime.datetime(2000, 1, 1)
+            => datetime.timedelta(6759, 78612, 392763)
 
-    Percentage:
-        x = 1 / 3
-        print(f'{x:%}')
-        => 33.333333%
+        print(datetime.today() - datetime(2000, 1, 1))
+        => 6759 days, 21:50:25.984492
 
-        print(f'{x:.1%}')
-        => 33.3%
+    timedelta:
+        The 'timedelta' object represents a difference in time and can be used to add or subtract.
+        e.g.
+            import datetime
+            datetime.datetime(2000, 1, 1) + datetime.timedelta(days=2)
+            => datetime.datetime(2000, 1, 3)
 
-    Sign:
-        x = 37
-        print(f'{x:+}')
-        => +37
-
-    Padding:
-        x = 9
-        print(f'{x:3}')
-        =>   9
-
-        x = 99
-        print(f'{x:3}')
-        =>  99
-
-        x = 100
-        print(f'{x:3}')
-        => 100
-
-        x = 9
-        print(f'{x:03}')
-        => 009
-
-    Thousands separator:
-        x = 123456.78
-        print(f'{x:,}')
-        => 123,456.78
-
-FORMATTING TEXT
-
-    Padding:
-        x = 'Hello'
-        print(f'{x:10}')
-        => Hello
-
-        print(f'{x:<10}')
-        => Hello
-
-    Right align / left padding:
-        print(f'{x:>10}')
-        =>      Hello
-
-    Centered:
-        print(f'{x:^10}')
-        =>    Hello
-
-    Fill with character:
-        print(f'{x:-^11}')
-        => ---Hello---
-
-    Truncation
-        alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        print(f'East as {alphabet:.3}')
-        => Easy as ABC
+Parsing and Formatting Dates:
+    Formatting the String Output:
 """
