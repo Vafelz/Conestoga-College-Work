@@ -1,29 +1,44 @@
 ASSIGNMENT #1 - The Super Store
 
-
-Assignment #1 – The Super Store
-
-For this store, you will offer 2 items of your choice for sale
+For the store, you will offer 2 items of your choice for sale.
 
 For each item:
-It must have two versions and allow the user to choose which version they would like to purchase
-It must have a colour choice as well, provide a list of available colours and allow the user to select a colour
-It must have a price (you determine the price)
-Ensure all prices are shown to the user before they pick what they are ordering.
-Provide a discount of 7% for students or senior citizens, as well as a quantity discount 30% for purchasing 5 or more of a particular item.  
-You will need to ask if the customer is a student, or a senior.
-A person cannot get both a student or a senior discount
-A person cannot get a student or senior discount as well as a quantity discount
-Discounts could be different per item; for example, a senior citizen purchasing 10 shirts but one pair of another item would get a 30% quantity discount on the first, and a 7% seniors discount on the second type of item.   Ensure you logic reflects this.
-Apply 13% sale tax to the sale and show the cost before and after tax.   Ensure that the tax is applied on the final total after any discounts. 
+- Have two versions
+- Allow the user to choose which version they would like to purchase
+- Have a colour choice:
+	+ Provide a list of available colours
+	+ Allow the user to select a colour
+- Have a price
+- Price visible to the user before ordering
+- Provide discounts:
+	+ 7% for students
+	+ 7% for senior citizens
+	+ 30% for 5 or more items
+- Ask the user to confirm if student, or senior
+- Discounts cannot stack
+- Only 1 discount per item:
+	+ E.g. A senior citizen purchasing 10 shirts, 1 pants:
+		> 10 shirts= 30% quantity discount; 1 pants= 7% senior discount
+- Display sub-total
+- Apply 13% sale tax
+- Display grand total
+- Repeat prompts until a valid choice is given
+	+ Include brief error message
+- Print summary menu, include:
+	+ Name
+	+ Type
+	+ Details
+	+ Price
+	+ Total cost
+- All text columns must align
+- Savings row only visible if discount was given
 
- When getting any input, the program should repeat prompts until a valid choice is given.   A brief error message should show as to why the prompt is repeating if that is the case.
+Item Type      Details       Cost per   Qnty   Discount    Total
+------------   -----------   --------   ----   --------   ------
+Hockey Stick   Adult, Blue      $7.99      5        30%   $27.97
 
-Print a summary menu that shows what was bought including the name the type of item, the details, and the total cost payable.  Have the output at the end of your program follow a standard format as per below.
+                                           Total Savings: $11.96
 
-  You can pick how wide your columns are, but make sure text lines up in the columns
-  The data being printed should line up to the column headers.   
-The savings row should only be there if a discount was given.  
-The example below uses 5 hockey sticks. Options available were Adult or Youth.  Colour choices were Black, Blue, Yellow. 
- Yours would have a second line for the new item of your choice, but should follow the same format
-Sample
+                                               Sub Total: $27.97
+                                                     Tax:  $3.64
+                                                   Total: $31.60
