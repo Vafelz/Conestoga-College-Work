@@ -1,0 +1,16 @@
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.exe
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.deps.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.runtimeconfig.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.runtimeconfig.dev.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\ref\Final Exam.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\bin\Debug\net5.0\Final Exam.pdb
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.csprojAssemblyReference.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.AssemblyInfoInputs.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.AssemblyInfo.cs
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.csproj.CoreCompileInputs.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\ref\Final Exam.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.pdb
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\TESTS\Final Exam\Final Exam\obj\Debug\net5.0\Final Exam.genruntimeconfig.cache
