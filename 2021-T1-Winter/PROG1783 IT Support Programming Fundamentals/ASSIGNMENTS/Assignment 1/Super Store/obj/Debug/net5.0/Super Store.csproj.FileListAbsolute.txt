@@ -1,0 +1,16 @@
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.exe
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.deps.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.runtimeconfig.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.runtimeconfig.dev.json
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\ref\Super Store.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\bin\Debug\net5.0\Super Store.pdb
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.csprojAssemblyReference.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.AssemblyInfoInputs.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.AssemblyInfo.cs
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.csproj.CoreCompileInputs.cache
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\ref\Super Store.dll
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.pdb
+C:\Users\waffl\OneDrive\Documents\GitHub\Conestoga-College-Work\2021-T1-Winter\PROG1783 IT Support Programming Fundamentals\ASSIGNMENTS\Assignment 1\Super Store\obj\Debug\net5.0\Super Store.genruntimeconfig.cache
