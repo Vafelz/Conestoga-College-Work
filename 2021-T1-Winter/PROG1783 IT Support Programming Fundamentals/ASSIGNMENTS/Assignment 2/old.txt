@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 /*
  * AUTHOR:  Duke Do
  * ID NUM:  8632240
@@ -32,59 +32,124 @@ namespace SuperSuperStore
 {
     class SuperSuperStore
     {
-        // Break() method for text readability
+        // Break() method to "slow program" and format text readability
         static void Break()
-        {
-            Console.WriteLine();
-        }
-
-        // Sleep() method to "slow program"
-        static void Sleep()
-        {
-            System.Threading.Thread.Sleep(500);
-        }
-
-        // SleepBreak() method to "slow program" and format text readability
-        static void SleepBreak()
         {
             Console.Write("\n");
             System.Threading.Thread.Sleep(500);
         }
+        
+        // Inventory structure to label item details
+        struct Inventory
+        {
+            public string Name;
+            public string Type;
+            public string Colour;
+            public double Price;
+        }
 
-        // Main program method
+        static void DisplayInv(Inventory[] x)
+        {
+            for (int i = 0; i < x.Length; i++)
+            {
+                Console.WriteLine("{0}) {1,-12}   ${2}", i + 1, x[i].Name, x[i].Price);
+            }
+        }
+
         static void Main(string[] args)
         {
-            // Variables
-            int quan1, quan2, i = 0;
-            double cost1 = 0, price1, cost2 = 0, price2, discount1 = 1, discount2 = 1;
-            string input, savings, sub, tax, total;
+            // Message to welcome user to the program
+            Console.WriteLine("|--------------------------------------------------|");
+            Console.WriteLine(" WELCOME TO THE ATLAS SUPERSUPERSTORE!\n" +
+                " A new and improved shopping experience!");
+            Console.WriteLine("|--------------------------------------------------|");
 
-            // Items array
-            String[] item1 = new string[6];
-            String[] item2 = new string[6];
+            // Initialize variables
+            double perDiscount = 0.93;
+            double quanDiscount = 0.7;
+            // double tax = 0.87;
 
-            // Welcome message
-            Console.WriteLine("Welcome to the Atlast Store!");
+            // Initialize inventory array
+            Inventory[] Ware = new Inventory[6];
+
+            // Initialize cart array
+            Inventory cart = new Inventory();
+
+            // Boots
+            Ware[0].Name = "Boots";
+            Ware[0].Type = "1) 7 US\n2) 7.5 US\n3) 8 US";
+            Ware[0].Colour = "1) Black\n2) Tan";
+            Ware[0].Price = 87.99;
+
+            // Goggles
+            Ware[1].Name = "Googles";
+            Ware[1].Type = "One-Size";
+            Ware[1].Colour = "1) Black Tint\n2) Blue Tint\n3) Orange Tint";
+            Ware[1].Price = 9.99;
+
+            // Helmet
+            Ware[2].Name = "Helmet";
+            Ware[2].Type = "1) Adult\n2) Youth";
+            Ware[2].Colour = "1) Black\n2) Grey";
+            Ware[2].Price = 24.95;
+
+            // Hockey Stick
+            Ware[3].Name = "Hockey Stick";
+            Ware[3].Type = "1) Adult\n2) Youth";
+            Ware[3].Colour = "1) Black\n2) Blue\n3) Yellow";
+            Ware[3].Price = 7.99;
+
+            // Knee Pads
+            Ware[4].Name = "Knee Pad";
+            Ware[4].Type = "Adult, Youth";
+            Ware[4].Colour = "Black, Green, Silver";
+            Ware[4].Price = 19.95;
+
+            // Jersey
+            Ware[5].Name = "Jersey";
+            Ware[5].Type = "1) Small\n2) Medium\n3) Large";
+            Ware[5].Colour = "1) Black\n2) Green\n3) White";
+            Ware[5].Price = 12.99;
 
             Break();
 
-            // Inventory information
-            Console.WriteLine("This location currently has the following items in stock\n:" +
-                "   1 - Helmets        $24.95\n" +
-                "   2 - Hockey Sticks   $7.99\n" +
-                "   3 - Knee Pads      $19.95");
+            // OUTPUT: Display inventory
+            DisplayInv(Ware);
+
+            Break();
+
+            // OLD
+            // Variables
+            int quan1, quan2, i = 0;
+            double cost1 = 0, price1, cost2 = 0, price2, discount1 = 1, discount2 = 1;
+            String input, savings, sub, tax, total;
+
+            // Items Array
+            String[] item1 = new string[6];
+            String[] item2 = new string[6];
+
+            // Welcome Message
+            Console.WriteLine(" Welcome to the Atlas Store!");
+
+            Break();
+
+            // Inventory Information
+            Console.WriteLine("This location currently has the following items in stock:\n" +
+                "   1 - Helmet        $24.95\n" +
+                "   2 - Hockey Sticks  $7.99\n" +
+                "   3 - Knee Pads     $19.95$");
 
             Break();
 
             // ITEM 1
-            // ITEM NAME
+            // INPUT: Item
             Console.WriteLine("What is the 1st item you want to purchase?");
             input = Console.ReadLine();
             do
             {
                 if (input == "1")
                 {
-                    item1[0] = "Helmets";
+                    item1[0] = "Helmet";
                     item1[2] = "$24.95";
                     cost1 = 24.95;
                     i++;
@@ -109,12 +174,13 @@ namespace SuperSuperStore
 
                     Console.WriteLine("Please choose one of the available options by number.");
                     input = Console.ReadLine();
+                    i = 0;
                 }
             } while (i == 0);
 
             Break();
 
-            // TYPE
+            // INPUT: Type
             Console.WriteLine("Please pick an available option:\n" +
                 "   1 - Adult\n" +
                 "   2 - Youth");
@@ -137,28 +203,29 @@ namespace SuperSuperStore
 
                     Console.WriteLine("Please choose one of the available options by number.");
                     input = Console.ReadLine();
+                    i = 0;
                 }
             } while (i == 0);
 
             Break();
 
-            // COLOUR
-            Console.WriteLine("Please pick an available colour:\n");
-            if (item1[0] == "Helmets")
+            // INPUT: Colour
+            if (item1[0] == "Helmet")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Green");
                 input = Console.ReadLine();
                 do
                 {
                     if (input == "1")
                     {
-                        item1[1] += ", Black";
+                        item1[1] = item1[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item1[1] += ", Green";
+                        item1[1] = item1[1] + ", Green";
                         i++;
                     }
                     else
@@ -167,12 +234,14 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
             else if (item1[0] == "Hockey Sticks")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Blue\n" +
                     "   3 - Yellow");
                 input = Console.ReadLine();
@@ -180,17 +249,18 @@ namespace SuperSuperStore
                 {
                     if (input == "1")
                     {
-                        item1[1] += ", Black";
+                        item1[1] = item1[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item1[1] += ", Blue";
+                        item1[1] = item1[1] + ", Blue";
                         i++;
                     }
                     else if (input == "3")
                     {
-                        item1[1] += ", Yellow";
+                        item1[1] = item1[1] + ", Yellow";
+                        i++;
                     }
                     else
                     {
@@ -198,24 +268,26 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
             else if (item1[0] == "Knee Pads")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Grey");
                 input = Console.ReadLine();
                 do
                 {
                     if (input == "1")
                     {
-                        item1[1] += ", Black";
+                        item1[1] = item1[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item1[1] += ", Grey";
+                        item1[1] = item1[1] + ", Grey";
                         i++;
                     }
                     else
@@ -224,98 +296,66 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
 
             Break();
 
-            // QUANTITY
+            // INPUT: Quantity
             Console.WriteLine("How many {0} would you like to purchase?", item1[0].ToLower());
             item1[3] = Console.ReadLine();
 
-            // DISCOUNTS
-            do
+            // INPUT: Discounts
+            quan1 = int.Parse(item1[3]);
+            if (quan1 >= 5)
             {
-                quan1 = int.Parse(item1[3]);
-                if (quan1 >= 5)
-                {
-                    discount1 = 0.7;
-                    item1[4] = "30%";
-                    i++;
-                }
-                else if (quan1 < 5)
-                {
-                    Break();
+                discount1 = 0.70;
+                item1[4] = "30%";
+            }
+            else
+            {
+                Break();
 
-                    Console.WriteLine("Are you a student? Y / N");
-                    input = Console.ReadLine().ToLower();
-                    do
+                Console.WriteLine("Are you a student or senior? Y / N");
+                input = Console.ReadLine().ToLower();
+                do
+                {
+                    if (input == "y")
                     {
-                        if (input == "y")
-                        {
-                            discount1 = 0.93;
-                            item1[4] = "7%";
-                            i++;
-                        }
-                        else if (input == "n")
-                        {
-                            Break();
+                        discount1 = 0.93;
+                        item1[4] = "7%";
+                        i++;
+                    }
+                    else if (input == "n")
+                    {
+                        i++;
+                    }
+                    else
+                    {
+                        Break();
 
-                            Console.WriteLine("Are you a senior? Y / N");
-                            input = Console.ReadLine().ToLower();
-                            do
-                            {
-                                if (input == "y")
-                                {
-                                    discount1 = 0.93;
-                                    item1[4] = "7%";
-                                    i++;
-                                }
-                                else if (input == "n")
-                                {
-                                    i++;
-                                }
-                                else
-                                {
-                                    Break();
-
-                                    Console.WriteLine("Please enter Y or N.");
-                                    input = Console.ReadLine().ToLower();
-                                }
-                            } while (i == 0);
-
-                            i++;
-                        }
-                        else
-                        {
-                            Break();
-
-                            Console.WriteLine("Please enter Y or N.");
-                            input = Console.ReadLine().ToLower();
-                        }
-                    } while (i == 0);
-                }
-                else
-                {
-                    Break();
-
-                    Console.WriteLine("Please select quantity by number (e.g. 5)");
-                    item1[3] = Console.ReadLine();
-                }
-            } while (i == 0);
+                        Console.WriteLine("Please choose one available options by letter.");
+                        input = Console.ReadLine().ToLower();
+                    }
+                } while (i == 0);
+            }
 
             Break();
 
             // ITEM 2
-            // ITEM NAME
-            Console.WriteLine("What is the 2nd item you want to purchase?");
+            // INPUT: Item
+            Console.WriteLine("What is the 2nd item you want to purchase?\n" +
+                "   1 - Helmet        $24.95\n" +
+                "   2 - Hockey Sticks  $7.99\n" +
+                "   3 - Knee Pads     $19.95$");
             input = Console.ReadLine();
             do
             {
                 if (input == "1")
                 {
-                    item2[0] = "Helmets";
+                    item2[0] = "Helmet";
                     item2[2] = "$24.95";
                     cost2 = 24.95;
                     i++;
@@ -340,12 +380,13 @@ namespace SuperSuperStore
 
                     Console.WriteLine("Please choose one of the available options by number.");
                     input = Console.ReadLine();
+                    i = 0;
                 }
             } while (i == 0);
 
             Break();
 
-            // TYPE
+            // INPUT: Type
             Console.WriteLine("Please pick an available option:\n" +
                 "   1 - Adult\n" +
                 "   2 - Youth");
@@ -368,28 +409,29 @@ namespace SuperSuperStore
 
                     Console.WriteLine("Please choose one of the available options by number.");
                     input = Console.ReadLine();
+                    i = 0;
                 }
             } while (i == 0);
 
             Break();
 
-            // COLOUR
-            Console.WriteLine("Please pick an available colour:\n");
-            if (item2[0] == "Helmets")
+            // INPUT: Colour
+            if (item2[0] == "Helmet")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Green");
                 input = Console.ReadLine();
                 do
                 {
                     if (input == "1")
                     {
-                        item2[1] += ", Black";
+                        item2[1] = item2[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item2[1] += ", Green";
+                        item2[1] = item2[1] + ", Green";
                         i++;
                     }
                     else
@@ -398,12 +440,14 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
             else if (item2[0] == "Hockey Sticks")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Blue\n" +
                     "   3 - Yellow");
                 input = Console.ReadLine();
@@ -411,17 +455,18 @@ namespace SuperSuperStore
                 {
                     if (input == "1")
                     {
-                        item2[1] += ", Black";
+                        item2[1] = item2[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item2[1] += ", Blue";
+                        item2[1] = item2[1] + ", Blue";
                         i++;
                     }
                     else if (input == "3")
                     {
-                        item2[1] += ", Yellow";
+                        item2[1] = item2[1] + ", Yellow";
+                        i++;
                     }
                     else
                     {
@@ -429,24 +474,26 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
             else if (item2[0] == "Knee Pads")
             {
-                Console.WriteLine("   1 - Black\n" +
+                Console.WriteLine("Please pick an available colour:\n" +
+                    "   1 - Black\n" +
                     "   2 - Grey");
                 input = Console.ReadLine();
                 do
                 {
                     if (input == "1")
                     {
-                        item2[1] += ", Black";
+                        item2[1] = item2[1] + ", Black";
                         i++;
                     }
                     else if (input == "2")
                     {
-                        item2[1] += ", Grey";
+                        item2[1] = item2[1] + ", Grey";
                         i++;
                     }
                     else
@@ -455,106 +502,70 @@ namespace SuperSuperStore
 
                         Console.WriteLine("Please choose one of the available options by number.");
                         input = Console.ReadLine();
+                        i = 0;
                     }
                 } while (i == 0);
             }
 
             Break();
 
-            // QUANTITY
+            // INPUT: Quantity
             Console.WriteLine("How many {0} would you like to purchase?", item2[0].ToLower());
             item2[3] = Console.ReadLine();
 
-            // DISCOUNTS
-            do
+            Break();
+
+            // INPUT: Discounts
+            quan2 = int.Parse(item2[3]);
+            if (quan2 >= 5)
             {
-                quan2 = int.Parse(item2[3]);
-                if (quan2 >= 5)
+                discount2 = 0.70;
+                item2[4] = "30%";
+            }
+            else
+            {
+                Console.WriteLine("Are you a student or senior? Y / N");
+                input = Console.ReadLine().ToLower();
+                do
                 {
-                    discount2 = 0.7;
-                    item2[4] = "30%";
-                    i++;
-                }
-                else if (quan2 < 5)
-                {
-                    Break();
-
-                    Console.WriteLine("Are you a student? Y / N");
-                    input = Console.ReadLine().ToLower();
-                    do
+                    if (input == "y")
                     {
-                        if (input == "y")
-                        {
-                            discount2 = 0.93;
-                            item2[4] = "7%";
-                            i++;
-                        }
-                        else if (input == "n")
-                        {
-                            Break();
+                        discount2 = 0.93;
+                        item2[4] = "7%";
+                        i++;
+                    }
+                    else if (input == "n")
+                    {
+                        i++;
+                    }
+                    else
+                    {
+                        Break();
 
-                            Console.WriteLine("Are you a senior? Y / N");
-                            input = Console.ReadLine().ToLower();
-                            do
-                            {
-                                if (input == "y")
-                                {
-                                    discount2 = 0.93;
-                                    item2[4] = "7%";
-                                    i++;
-                                }
-                                else if (input == "n")
-                                {
-                                    i++;
-                                }
-                                else
-                                {
-                                    Break();
-
-                                    Console.WriteLine("Please enter Y or N.");
-                                    input = Console.ReadLine().ToLower();
-                                }
-                            } while (i == 0);
-
-                            i++;
-                        }
-                        else
-                        {
-                            Break();
-
-                            Console.WriteLine("Please enter Y or N.");
-                            input = Console.ReadLine().ToLower();
-                        }
-                    } while (i == 0);
-                }
-                else
-                {
-                    Break();
-
-                    Console.WriteLine("Please select quantity by number (e.g. 5)");
-                    item2[3] = Console.ReadLine();
-                }
-            } while (i == 0);
+                        Console.WriteLine("Please choose one available options by letter.");
+                        input = Console.ReadLine().ToLower();
+                    }
+                } while (i == 0);
+            }
 
             Break();
 
-            // CALCULATIONS
-            // PRICE
+            // CALCULATIONS: Price
             price1 = cost1 * quan1 * discount1;
             item1[5] = "$" + price1.ToString("0.##");
             price2 = cost2 * quan2 * discount2;
             item2[5] = "$" + price2.ToString("0.##");
 
-            // SAVINGS
+            // CALCULATIONS: Savings
             savings = (price1 * (1 - discount1) + price2 * (1 - discount2)).ToString("0.##");
 
-            // SUB-TOTAL
+            // CALCULATIONS: Sub-Total
             sub = "$" + (price1 + price2).ToString("0.##");
 
-            // TAX
+            // CALCULATIONS: Tax
             tax = "$" + ((price1 + price2) * 0.13).ToString("0.##");
 
-            // GRAND TOTAL
+            // CALCULATIONS Grand Total
             total = "$" + ((price1 + price2) * 0.13 + price1 + price2).ToString("0.##");
 
             // OUTPUT
