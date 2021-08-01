@@ -1,7 +1,37 @@
 @charset "UTF-8";
 
 body {
-	color: #000000;
-	background-color: #d9d9d9;
-	font-family: Calibri, Arial, sans-serif;
+	color: #FFF;
+	background-color: aqua;
+}
+
+h1 {
+	background-color: #000;
+	border: thick solid #FFF;
+	color: aqua;
+	font-size: 60px;
+	font-family: Verdana, sans-serif;
+	line-height: 200%;
+	text-align: center;
+}
+
+p{
+	color: black;
+	font-size: 18px;
+	line-height: 20px;
+	margin-left: 24px;
+	margin-right: 24px;
+	text-align: justify;
+}
+
+li.disc {
+	list-style: disc;
+}
+
+li.circle {
+	list-style: circle;
+}
+
+li.square {
+	list-style: square;
 }
