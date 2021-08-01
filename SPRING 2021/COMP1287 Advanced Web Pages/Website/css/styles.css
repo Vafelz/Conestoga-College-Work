@@ -2,8 +2,8 @@
 
 body {
 	background-color: #F5F5F5;
-	margin: 12px 24px 12px 24px;
-	padding: 12px 24px 12px 24px;
+	margin: 12px 24px;
+	padding: 12px 24px;
 }
 
 h1 {
@@ -11,8 +11,8 @@ h1 {
 	color: #F5F5F5;
 	font-size: 60px;
 	font-family: Arial, sans-serif;
-	margin: 12px 12px 12px 12px;
-	padding: 12px 24px 12px 24px;
+	margin: 12px;
+	padding: 12px 24px;
 }
 
 h2 {
@@ -62,4 +62,15 @@ li.circle {
 
 li.square {
 	list-style: square;
+}
+
+.bold_yellow_indent {
+	background-color: green;
+	color: yellow;
+	font-weight: bold;
+	padding: 0px 12px;
+}
+
+.solid {
+	border: medium solid #CCCCCC;
 }

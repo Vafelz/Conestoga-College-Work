@@ -1,0 +1,13 @@
+.aqua_hilite {
+	background-color: aqua;
+}
+
+.box {
+	background-color: yellow;
+	border: medium solid white;
+	float: right;
+	height: 100px;
+	margin: 8px;
+	padding: 8px;
+	width: 300px;
+}
