@@ -1,0 +1,15 @@
+.intro {
+    color: blue;
+}
+
+#email {
+    font-style: italic;
+}
+
+body {
+    margin: 12pt 24pt;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
