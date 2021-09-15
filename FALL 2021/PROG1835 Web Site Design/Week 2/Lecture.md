@@ -1,4 +1,7 @@
-**|--- LECTURE 1 ---|**
+**|--- LECTURE 2 ---|**
+
+
+
 **UNIT OUTCOMES COVERED THIS WEEK**
   1.1: Implement current web standards (just getting started on this)
 
