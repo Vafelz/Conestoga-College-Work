@@ -33,16 +33,25 @@ var clearEntries = () => {
 
 var clearMiles = () => {
     $("#miles").value = "";
-};
+}
 
 var clearGallons = () => {
     $("#gallons").value = "";
-};
+}
 
 document.addEventListener("DOMContentLoaded", () => {
+    // calculates miles per gallon
     $("#calculate").addEventListener("click", processEntries);
-    $("#calculate").addEventListener("dblclick", clearEntries);
+
+    // clears entries when double-click MPG text box
+    $("#mpg").addEventListener("dblclick", clearEntries);
+
+    // clear miles on focus
     $("#miles").addEventListener("focus", clearMiles);
+
+    // clear gallons on focus
     $("#gallons").addEventListener("focus", clearGallons);
+
+    // calculates on gallons blur
     $("#gallons").addEventListener("blur", processEntries);
 });
